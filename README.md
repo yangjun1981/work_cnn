@@ -48,8 +48,6 @@ predict.sh为启动预测程序的脚本。
 
 number.war为web应用包，可直接放到tomcat的webapp中，随tomcat运行。
 
-主要的代码文件：
-
 number.html为前端页面，提供手写输入界面，保存手写输入图片并传送到后台；
 
 NumServlet.java为Web应用后端java程序，处理前端传递的图片，进行格式转换、缩放、灰度化、中心化等处理，然后通知python的预测程序进行对约定路径(/root/temp,需要有该目录的操作权限)的图片进行预测，并将结果返回给前端。
